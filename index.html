@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep's Portfolio - MERN Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Heroicons CDN -->
+    <script src="https://unpkg.com/heroicons@2.0.13/dist/heroicons.min.js"></script>
+    <style>
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .typing::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Hover animation for icons */
+        .icon-hover:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Header Section -->
+    <header class="min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
+        style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
+        <h1 class="text-4xl text-teal-500  md:text-6xl font-bold typing fade-in-up">
+            Hi, I'm Sandeep - MERN Stack Developer
+        </h1>
+        <p class="mt-4 text-xl md:text-2xl fade-in-up" style="animation-delay: 0.5s;">
+            Results-oriented MERN/React.js developer with 3 years of experience.
+        </p>
+        <div class="mt-8 space-x-4 fade-in-up" style="animation-delay: 1s;">
+            <!-- LinkedIn Button with Emoji -->
+             <div>
+                <a href="https://www.linkedin.com/in/sandeep-gunde-2552a4211/" target="_blank"
+                class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition ease-in-out">
+                <span class="mr-2">🔗</span> LinkedIn
+            </a>
+            <!-- GitHub Button with Emoji -->
+            <a href="https://github.com/SandeepG9" target="_blank"
+                class="flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition ease-in-out">
+                <span class="mr-2">🐱</span> GitHub
+            </a>
+             </div>
+            
+            
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-teal-500 fade-in-up">Skills</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming Languages -->
+                <div class="fade-in-up flex items-start" style="animation-delay: 0.2s;">
+                    <!-- Icon -->
+                    <svg class="h-6 w-6 text-teal-400 mr-3 flex-shrink-0 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 1.343-3 3 0 1.232.814 2.273 1.95 2.688A4.002 4.002 0 0116.05 14C17.657 14 19 12.657 19 11c0-1.657-1.343-3-3-3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14c-1.657 0-3 1.343-3 3m6-3c0 1.657-1.343 3-3 3m0-6c-2.21 0-4 1.79-4 4m8 0c0 2.21-1.79 4-4 4" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold">Programming Languages</h3>
+                        <p class="mt-2">JavaScript | Node.js | TypeScript | Python</p>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="fade-in-up flex items-start" style="animation-delay: 0.4s;">
+                    <!-- Icon -->
+                    <svg class="h-6 w-6 text-teal-400 mr-3 flex-shrink-0 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v16m8-8H4" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold">Frontend</h3>
+                        <p class="mt-2">HTML | CSS | React.js | Redux | JSX | Tailwind CSS | Bootstrap | REST APIs</p>
+                    </div>
+                </div>
+                <!-- Version Control -->
+                <div class="fade-in-up flex items-start" style="animation-delay: 0.6s;">
+                    <!-- Icon -->
+                    <svg class="h-6 w-6 text-teal-400 mr-3 flex-shrink-0 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v16h16V4H4z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold">Version Control</h3>
+                        <p class="mt-2">Git | GitHub</p>
+                    </div>
+                </div>
+                <!-- Additional -->
+                <div class="fade-in-up flex items-start" style="animation-delay: 0.8s;">
+                    <!-- Icon -->
+                    <svg class="h-6 w-6 text-teal-400 mr-3 flex-shrink-0 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6l4 2" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold">Additional</h3>
+                        <p class="mt-2">Docker | CI/CD | Prisma | RESTful APIs | Express.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-teal-500 fade-in-up">Experience</h2>
+            <div class="mt-8 space-y-12">
+                <!-- Senior System Associate -->
+                <div class="fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-2xl font-semibold flex items-center">
+                        <svg class="h-6 w-6 text-teal-400 mr-2 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 1.343-3 3 0 1.232.814 2.273 1.95 2.688A4.002 4.002 0 0116.05 14C17.657 14 19 12.657 19 11c0-1.657-1.343-3-3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14c-1.657 0-3 1.343-3 3m6-3c0 1.657-1.343 3-3 3m0-6c-2.21 0-4 1.79-4 4m8 0c0 2.21-1.79 4-4 4" />
+                        </svg>
+                        Senior System Associate
+                    </h3>
+                    <p class="mt-2 text-gray-400">Infosys Ltd. | Sept 2021 - Current | Pune, India</p>
+
+                    <div class="fade-in-up" style="animation-delay: 0.4s;">
+                        <h4 class="text-xl font-semibold flex items-center ml-8">
+                            <!-- <svg class="h-5 w-5 text-teal-400 mr-2 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-6 0h6" />
+                            </svg> -->
+                            Global Printing Management
+                        </h4>
+                        <p class="mt-2">Developed a React app for one of the Fortune 500 companies in the retail and information solution domain, managing applications responsible for creating tags and generating barcodes. Utilized React features, Context API, Tailwind CSS, and implemented search, filter, and responsive design functionalities.</p>
+                        <p class="mt-2 text-sm italic font-semibold">Skills used: React.js, Express.js, Node.js, MongoDB, MySQL, JavaScript, Redux, HTML/CSS</p>
+                    </div>
+                    
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>Collaborated closely with UI/UX designers and back-end developers to deliver 3+ responsive and interactive web applications using React, HTML, CSS, and JavaScript. Implemented performance optimizations resulting in a 20% reduction in page load times.</li>
+                        <li>Integrated RESTful APIs to fetch data, ensuring seamless data synchronization between the front-end and back-end.</li>
+                        <li>Managed state efficiently using Redux, enhancing application performance and maintaining user experience.</li>
+                        <li>Improved website load times by optimizing code, minimizing resource requests, and implementing lazy loading.</li>
+                        <li>Participated in code reviews, providing constructive feedback, and ensuring coding standards and best practices.</li>
+                        <li>Developed and maintained reusable components and libraries for streamlined development across multiple projects.</li>
+                        <li>Resolved cross-browser compatibility issues and implemented responsive design to ensure optimal user experience.</li>
+                    </ul>
+                </div>
+                <!-- Global Printing Management -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-teal-500 fade-in-up">Certifications</h2>
+            <ul class="mt-8 space-y-4">
+                <li class="fade-in-up flex items-center" style="animation-delay: 0.2s;">
+                    <span class="mr-3">📜</span> Infosys Certified Frontend Developer
+                </li>
+                <li class="fade-in-up flex items-center" style="animation-delay: 0.4s;">
+                    <span class="mr-3">🏅</span> <a href="https://app.100xdevs.com/certificate/verify/59XXG3AE" target="_blank">100x Devs MERN Certified</a>
+                </li>
+                <li class="fade-in-up flex items-center" style="animation-delay: 0.6s;">
+                    <a href=""></a>
+                    <span class="mr-3">💻</span><a href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/3258/certificates/136921/4842170_136921.pdf?1704873945" target="_blank">C/C++ & Data Structures and Algorithms</a> 
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-teal-500 fade-in-up">Personal Projects</h2>
+            <div class="mt-8 space-y-6">
+                <!-- Online E-Wallet -->
+                <div class="fade-in-up bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                    style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold flex items-center">
+                        <svg class="h-6 w-6 text-teal-400 mr-2 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 9V7a5 5 0 00-10 0v2M5 15h14l1 6H4l1-6z" />
+                        </svg>
+                        Online E-Wallet
+                    </h3>
+                    <p class="mt-2">Developed a digital wallet using the MERN stack to simplify online transactions and financial tracking.</p>
+                    <a href="https://shorturl.at/jntY4" class="text-teal-400 hover:underline flex items-center mt-2">
+                        <span class="mr-1">🔗</span> Repo Link
+                    </a>
+                </div>
+                <!-- Urban Shopper Ecommerce -->
+                <div class="fade-in-up bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                    style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-semibold flex items-center">
+                        <svg class="h-6 w-6 text-teal-400 mr-2 icon-hover" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7.5M7 13h10M17 21a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                        Urban Shopper Ecommerce
+                    </h3>
+                    <p class="mt-2">UrbanShopper is an e-commerce website built using React.js, Express, Node.js, SQL, Prisma, Tailwind CSS, and JWT token authentication.</p>
+                    <div class="mt-2 flex items-center space-x-4">
+                        <a href="https://github.com/SandeepG9/Ecommerce/" class="text-teal-400 hover:underline flex items-center">
+                            <span class="mr-1">🔗</span> Repo Link
+                        </a>
+                        <a href="https://www.linkedin.com/posts/sandeep-gunde-2552a4211_ecommerce-webdevelopment-react-activity-7228510368120115201-vj38?utm_source=share&utm_medium=member_desktop" target="_blank"
+                            class="text-teal-400 hover:underline flex items-center">
+                            <span class="mr-1">🎥</span> Video Link: LinkedIn Post
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-teal-500 fade-in-up">Education</h2>
+            <div class="mt-8 fade-in-up flex items-center" style="animation-delay: 0.2s;">
+                <svg class="h-6 w-6 text-teal-400 mr-3 icon-hover" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.484 6.479A12.07 12.07 0 0112 20.055a12.07 12.07 0 01-6.644-1.998 12.083 12.083 0 01.484-6.479L12 14z" />
+                </svg>
+                <div>
+                    <h3 class="text-xl font-semibold">Bachelor of Engineering in Computer Science</h3>
+                    <p class="mt-2">Savitribai Phule University, March 2021</p>
+                    <p class="mt-1">CGPA: 7.5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-8 bg-gray-900 text-center">
+        <p class="text-teal-400">© 2024 Sandeep | All rights reserved</p>
+    </footer>
+
+    <!-- Additional JavaScript for Animations -->
+    <script>
+        // Add scroll-based animations using Intersection Observer
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in-up');
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
